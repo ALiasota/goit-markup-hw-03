@@ -21,6 +21,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.list {
+  list-style: none;
+}
+
 .transparent {
   position: absolute;
   white-space: nowrap;
@@ -43,6 +47,20 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  /*outline: 2px solid red;*/
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*LOGO*/
 
 .logo {
@@ -53,6 +71,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: block;
 }
 
 .logo-1 {
@@ -64,6 +83,23 @@ body {
 }
 
 /*Nav*/
+
+.head {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.head-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
 .site-nav .link-head {
   color: var(--title-text-color);
   font-weight: 500;
@@ -84,11 +120,15 @@ body {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
+.site-nav-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 /*contact header*/
+
+.contacts-head {
+  margin-left: auto;
+}
 
 .contsct-header {
   color: inherit;
@@ -97,6 +137,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.contsct-header:not(:first-child) {
+  margin-left: 50px;
 }
 
 /*Hero*/

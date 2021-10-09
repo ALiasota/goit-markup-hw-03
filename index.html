@@ -6,37 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Web Studio</title>
 </head>
 <body>
     <!--Шапка сайта-->
-    <header>
-        <nav>
-            <a href="./index.html" class="logo">
-                <span class="logo-1" lang="en">Web</span><span class="logo-2" lang="en">Studio</span>
-            </a>
-            <ul class="site-nav list">
-                <li><a class="link link-head page" href="">Студия</a></li>
-                <li><a class="link link-head" href="portfolio.html">Портфолио</a></li>
-                <li><a class="link link-head" href="">Контакты</a></li>
-            </ul>  
-        </nav>
-        <div>
-            <a class="link contsct-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="link contsct-header" href="tel:+380961111111">+38 096 111 11 11</a>
+    <header class="page-header">
+        <div class="head container">
+            <nav class="head-nav"> 
+                <a href="./index.html" class="logo">
+                    <span class="logo-1" lang="en">Web</span><span class="logo-2" lang="en">Studio</span>
+                </a>
+                <ul class="site-nav list">
+                    <li class="site-nav-item"><a class="link link-head page" href="">Студия</a></li>
+                    <li class="site-nav-item"><a class="link link-head" href="portfolio.html">Портфолио</a></li>
+                    <li class="site-nav-item"><a class="link link-head" href="">Контакты</a></li>
+                </ul>  
+            </nav>
+            <div class="contacts-head">
+                <a class="link contsct-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="link contsct-header" href="tel:+380961111111">+38 096 111 11 11</a>
+            </div>
         </div>
     </header>
 
     <main>
         <!--Герой-->
-        <section>
+        <section class="section container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button class="hero-button" type="button">Заказать услугу</button>
         </section>
 
         <!--Якості-->
-        <section>
+        <section class="section container">
             <h2 class="transparent">Качества</h2>
             <ul class="list">
                 <li>
@@ -67,7 +70,7 @@
         </section>
 
         <!--Заняття-->
-        <section>
+        <section class="section container">
             <h2 class="section-head">Чем мы занимаемся</h2>
             <ul class="list">
                 <li>
@@ -83,7 +86,7 @@
         </section>
 
         <!--Команда-->
-        <section class="team">
+        <section class="team section container">
             <h2 class="section-head">Наша команда</h2>
             <ul class="list">
                 <li>
