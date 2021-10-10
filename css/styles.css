@@ -25,6 +25,19 @@ body {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 .transparent {
   position: absolute;
   white-space: nowrap;
@@ -45,6 +58,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .container {
@@ -53,7 +67,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  /*outline: 2px solid red;*/
+  outline: 2px solid red;
 }
 
 .section {
@@ -93,6 +107,8 @@ body {
 .head-nav {
   display: flex;
   align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .site-nav {
@@ -145,6 +161,10 @@ body {
 
 /*Hero*/
 
+.hero {
+  text-align: center;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -153,6 +173,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  display: block;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -175,20 +197,49 @@ body {
 
 /*quality*/
 
+.qualities {
+  display: flex;
+}
+
+.quality-item {
+  flex-basis: 270px;
+}
+
+.quality-item:not(:first-child) {
+  margin-left: 30px;
+}
+
 .quality-title {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 /*work*/
+
+.works {
+  display: flex;
+}
+
+.work-item:not(:first-child) {
+  margin-left: 30px;
+}
 
 /*team*/
 
 .team {
   background-color: #f5f4fa;
+}
+
+.members {
+  display: flex;
+}
+
+.member-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .member-name {
@@ -197,12 +248,19 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 /*footer*/
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address {
 }
 
 .logo-2f {
@@ -214,12 +272,21 @@ body {
 }
 
 .contact-footer {
+  display: block;
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-item:first-child {
+  margin-bottom: 20px;
+}
+
+.footer-item:not(:last-child, :first-child) {
+  margin-bottom: 9px;
 }
 
 /*Portfolio*/
