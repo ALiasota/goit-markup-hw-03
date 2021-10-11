@@ -70,11 +70,6 @@ img {
   /* outline: 2px solid red; */
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /*LOGO*/
 
 .logo {
@@ -96,19 +91,23 @@ img {
   color: #000000;
 }
 
-/*Nav*/
+/*header*/
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
 .head {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+  
 }
 
 .head-nav {
   display: flex;
-  align-items: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  align-items: center;  
 }
 
 .site-nav {
@@ -163,6 +162,8 @@ img {
 
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -203,12 +204,16 @@ img {
 
 /*quality*/
 
+.section-qualities{
+  padding-top: 94px;
+}
+
 .qualities {
   display: flex;
 }
 
 .quality-item {
-  flex-basis: 270px;
+  flex-basis: calc((100%-90px)/4);
 }
 
 .quality-item:not(:first-child) {
@@ -226,8 +231,14 @@ img {
 
 /*work*/
 
+.section-works {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .works {
   display: flex;
+  
 }
 
 .work-item:not(:first-child) {
@@ -236,16 +247,28 @@ img {
 
 /*team*/
 
-.team {
+.section-team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .members {
   display: flex;
 }
 
+.member-item{
+  flex-basis: calc((100%-90px)/4);
+}
+
 .member-item:not(:first-child) {
   margin-left: 30px;
+}
+
+.member-discr {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .member-name {
@@ -253,8 +276,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-top: 30px;
+  letter-spacing: 0.03em;  
   margin-bottom: 10px;
 }
 
@@ -296,6 +318,11 @@ img {
 }
 
 /*Portfolio*/
+
+.section-portfolio{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .porfolio-meny {
   display: flex;
@@ -346,9 +373,9 @@ img {
   flex-wrap: wrap;
 }
 
-.project-item{
-  border-bottom: 1px Solid  #EEEEEE;
+.project-item{  
   width: 370px;
+  /* flex-basis: calc((100%-60px)/3); */
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -361,20 +388,24 @@ img {
   margin-bottom: 0;
 }
 
+.project-discr {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px Solid  #EEEEEE;
+  border-top: 0;
+}
 
 .client {
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
-  margin-top: 20px;
+  letter-spacing: 0.06em;  
 }
 
 .project {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  margin-top: 4px;
-  margin-bottom: 20px;
+  margin-top: 4px;  
 }
