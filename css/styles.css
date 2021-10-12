@@ -213,7 +213,7 @@ img {
 }
 
 .quality-item {
-  flex-basis: calc((100%-90px)/4);
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .quality-item:not(:first-child) {
@@ -258,7 +258,7 @@ img {
 }
 
 .member-item{
-  flex-basis: calc((100%-90px)/4);
+  flex-basis: calc(( 100% - 90px) / 4);
 }
 
 .member-item:not(:first-child) {
@@ -351,21 +351,7 @@ img {
 .portfolio-botton:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  cursor: pointer;
-  Corner radius: 4px
-  Effect Style: shadow-middle
-  Effect: Drop shadow
-  Radius: 2px
-  Offset: 0px, 2px
-  rgba(0, 0, 0, 0.12)
-  Effect: Drop shadow
-  Radius: 2px
-  Offset: 0px, 1px
-  rgba(0, 0, 0, 0.08)
-  Effect: Drop shadow
-  Radius: 1px
-  Offset: 0px, 3px
-  rgba(0, 0, 0, 0.1)
+  cursor: pointer;  
 }
 
 .projects {
@@ -374,8 +360,8 @@ img {
 }
 
 .project-item{  
-  width: 370px;
-  /* flex-basis: calc((100%-60px)/3); */
+  /* width: 370px; */
+  flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -389,8 +375,7 @@ img {
 }
 
 .project-discr {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;  
   border: 1px Solid  #EEEEEE;
   border-top: 0;
 }
